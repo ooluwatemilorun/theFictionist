@@ -28,12 +28,12 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      <div className="app__header-badge">
+      {/* <div className="app__header-badge">
         <div className="badge-cmp app__flex">
-          <span>👋</span>
+          <span>🤝</span>
           <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Faith</h1>
+            <p className="p-text">Hello, Meet</p>
+            <h1 className="head-text">Faith Ehiane</h1>
           </div>
         </div>
 
@@ -43,7 +43,26 @@ const Header = () => (
           <p className="p-text">Cultural Enthusiast</p>
           <p className="p-text">Project Manager</p>
         </div>
-      </div>
+      </div> */}
+
+        <div className="header__text">
+          <div className="header__greet">
+            <span>Hello! meet 🤝</span>
+            <h1>Faith Ehiane</h1>
+          </div>
+
+          <ul className="header__tag">
+            <li> <i class="fa fa-check-square" aria-hidden="true"></i> Historian</li> |
+            <li>Storyteller</li>|
+            <li>Project Manager</li>|
+            <li>Cultural Enthusiast</li>
+          </ul>
+
+          {/* <div className="header__tag">
+            <p className="header__p">Historian, Storyteller, Project Manager, Cultural Enthusiast</p>
+          </div> */}
+        </div>
+
     </motion.div>
 
     <motion.div
@@ -52,16 +71,16 @@ const Header = () => (
       className="app__header-img"
     >
       <img src={images.personal} alt="profile_bg" className='profile_img'/>
-      <motion.img
+      {/* <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         src={images.circle}
         alt="profile_circle"
         className="overlay_circle"
-      />
+      /> */}
     </motion.div>
 
-    <motion.div
+    {/* <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
@@ -75,7 +94,7 @@ const Header = () => (
   </div>
 ))}
 
-    </motion.div>
+    </motion.div> */}
   </div>
 );
 

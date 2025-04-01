@@ -6,27 +6,27 @@ import './Skills.scss';
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
-  const [skills, setSkills] = useState([]);
+  const [trainings, setTrainings] = useState([]);
 
   useEffect(() => {
     const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
+    const trainingsQuery = '*[_type == "trainings"]';
 
     client.fetch(query).then((data) => {
       setExperiences(data);
     });
 
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
+    client.fetch(trainingsQuery).then((data) => {
+      setTrainings(data);
     });
   }, []);
 
   return (
     <>
-      <h2 className="head-text">Skills <span>&</span> Experiences</h2>
+      <h2 className="head-text">Certificates <span>&</span> Experiences</h2>
 
       <div className="app__skills-container">
-        <div className="app__skills-list">
+        {/* <div className="app__skills-list">
           {skills.map((skill) => (
             <div className="app__skills-item app__flex">
               <div
@@ -38,8 +38,32 @@ const Skills = () => {
               <p className="p-text">{skill.name}</p>
             </div>
           ))}
+        </div> */}
+        
+        <div className="app__training">
+          <h2>Trainings</h2>
+          {trainings.map((training) => (
+            <div
+              className="app__training--item"
+              key={training.year}
+            >
+              <div className="app__training--year">
+                <p className="bold-text">{training.year}</p>
+              </div>
+              <div className="app__training--orgs">
+                <div className="app__training--org">
+                  <h4 className="bold-text">{training.title}</h4>
+                  <p className="p-text">{training.org}</p>
+                  
+                  <p className="p-text">{training.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+
         <div className="app__skills-exp">
+        <h2>Experience</h2>
           {experiences.map((experience) => (
             <div
               className="app__skills-exp-item"
@@ -65,6 +89,6 @@ const Skills = () => {
       </div>
     </>
   );
-};
+}; 
 
 export default AppWrap(Skills, 'skills');

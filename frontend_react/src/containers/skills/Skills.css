@@ -1,0 +1,111 @@
+.app__skills {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__skills-container {
+  width: 80%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 900px) {
+  .app__skills-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.app__skills-exp {
+  flex: 1;
+}
+.app__skills-exp h2 {
+  text-align: center;
+}
+.app__skills-exp .app__skills-exp-item {
+  display: flex;
+  margin: 1rem 0;
+}
+.app__skills-exp .app__skills-exp-work {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.app__skills-exp .app__skills-exp-work h4 {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+.app__skills-exp .app__skills-exp-work p {
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-top: 5px;
+}
+
+.app__skills-exp-year {
+  margin-right: 3rem;
+}
+.app__skills-exp-year p {
+  font-weight: 800;
+}
+@media screen and (max-width: 450px) {
+  .app__skills-exp-year {
+    margin-right: 1rem;
+  }
+}
+
+.app__training {
+  flex: 1;
+  padding: 0.5rem;
+}
+.app__training h2 {
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .app__training {
+    margin-top: 2rem;
+  }
+}
+
+.app__training--item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.app__training--orgs {
+  flex: 1;
+}
+.app__training--orgs .app__training--org {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.app__training--orgs .app__training--org h4 {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+.app__training--orgs .app__training--org p {
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-top: 5px;
+}
+
+.app__training--year {
+  margin-right: 3rem;
+}
+.app__training--year p {
+  font-weight: 800;
+}
+@media screen and (max-width: 450px) {
+  .app__training--year {
+    margin-right: 1rem;
+  }
+}/*# sourceMappingURL=Skills.css.map */

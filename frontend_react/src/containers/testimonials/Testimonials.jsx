@@ -27,6 +27,7 @@ const Testimonial = () => {
     <>
       {testimonials.length > 0 && (
         <>
+          <h2 className="head-text">What People Say</h2>
           <div className="app__testimonial-item app__flex">
             <img
               src={urlFor(testimonials[currentIndex].imgurl) || '/default-image.png'}

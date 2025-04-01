@@ -1,0 +1,47 @@
+.app__about {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__profiles {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.head-text {
+  margin: 4rem auto;
+}
+
+.app__profile-item {
+  width: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem;
+}
+.app__profile-item img {
+  width: 100%;
+  height: 170px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app__profile-item h2 {
+  color: var(--secondary-color);
+}
+.app__profile-item p {
+  color: var(--dark-color);
+}
+@media screen and (min-width: 2000px) {
+  .app__profile-item {
+    width: 370px;
+  }
+  .app__profile-item img {
+    height: 320px;
+  }
+}/*# sourceMappingURL=About.css.map */

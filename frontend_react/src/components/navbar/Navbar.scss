@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: var(--black-color);
+    background: var(--secondary-color);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -24,16 +24,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;  
-
-    // img{
-    //     width: 90px;
-    //     height: 20px;
-
-    //     @media screen and (min-width: 2000px) {
-    //         width: 180px;
-    //         height: 40px;
-    //     }
-    // }
 }
 
 .app__navbar-links{
@@ -65,13 +55,13 @@
             transition: all 0.3s ease-in-out;
 
             &:hover{
-                color: var(--secondary-color);
+                color: var(--black-color);
             }
         }
 
         &:hover{
             div{
-                background: var(--secondary-color);
+                background: var(--black-color);
             }
         }
     }
@@ -89,12 +79,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--black-color);
+    background: var(--white-color);
+    border: 1px solid var(--secondary-color);
+
+    &:hover{
+        cursor: pointer;
+        background: var(--secondary-color);
+        border: 1px solid var(--white-color);
+    }
 
     svg{
         width: 70%;
         height: 70%;
-        color: var(--white-color);
+        color: var(--secondary-color);
+        
+        &:hover{
+            color: var(--white-color);
+        }
     }
 
     div{
@@ -102,7 +103,7 @@
         top: 0;
         bottom: 0;
         right: 0;
-        z-index: 5;
+        z-index: 10;
         padding: 1rem;
         width: 60%;
         height: 100vh;
@@ -110,8 +111,7 @@
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-        // background: url(../../assets/bgWhite.png);
-        background-color: var(--black-color);
+        background-color: var(--secondary-color);
         background-size: cover;
         background-repeat: repeat;
         box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
@@ -122,6 +122,10 @@
             height: 35px;
             color: var(--white-color);
             margin: 0.5rem 1rem;
+        
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         ul{
