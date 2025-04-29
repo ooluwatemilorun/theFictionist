@@ -28,41 +28,17 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      {/* <div className="app__header-badge">
-        <div className="badge-cmp app__flex">
-          <span>🤝</span>
-          <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Hello, Meet</p>
-            <h1 className="head-text">Faith Ehiane</h1>
-          </div>
-        </div>
+      <div className="header__text">
+        <span>Hello! meet 🤝</span>
+        <h1>Faith Ehiane</h1>
+      </div>
 
-        <div className="tag-cmp app__flex">
-          <p className="p-text">Storyteller</p>
-          <p className="p-text">Historian</p>
-          <p className="p-text">Cultural Enthusiast</p>
-          <p className="p-text">Project Manager</p>
-        </div>
-      </div> */}
-
-        <div className="header__text">
-          <div className="header__greet">
-            <span>Hello! meet 🤝</span>
-            <h1>Faith Ehiane</h1>
-          </div>
-
-          <ul className="header__tag">
-            <li> <i class="fa fa-check-square" aria-hidden="true"></i> Historian</li> |
-            <li>Storyteller</li>|
-            <li>Project Manager</li>|
-            <li>Cultural Enthusiast</li>
-          </ul>
-
-          {/* <div className="header__tag">
-            <p className="header__p">Historian, Storyteller, Project Manager, Cultural Enthusiast</p>
-          </div> */}
-        </div>
-
+      <ul className="header__tag">
+        <li> <i class="fa fa-check-square" aria-hidden="true"></i> Historian</li> |
+        <li>Storyteller</li>|
+        <li>Project Manager</li>|
+        <li>Cultural Enthusiast</li>
+      </ul>
     </motion.div>
 
     <motion.div

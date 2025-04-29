@@ -67,16 +67,16 @@ const Work = () => {
                 whileHover={{ opacity: [0, 1] }}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
+                  onClick={() => setSelectedWork(work)}
               >
-                <motion.div
+                {/* <motion.div
                   whileInView={{ scale: [0, 1] }}
                   whileHover={{ scale: [1, 0.9] }}
                   transition={{ duration: 0.25 }}
                   className="app__flex fill__eye"
-                  onClick={() => setSelectedWork(work)}
                 >
                   <AiFillEye />
-                </motion.div>
+                </motion.div> */}
               </motion.div>
             </div>
 
